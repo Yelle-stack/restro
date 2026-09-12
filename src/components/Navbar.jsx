@@ -1,4 +1,5 @@
 import React from 'react'
+import { navLinks } from '../data/data'
 
 const Navbar = () => {
   return (
@@ -10,6 +11,17 @@ const Navbar = () => {
             </a>
 
              {/* desktop navigation links */}
+            <div className='hidden md:flex items-center gap-10'>
+                {navLinks.map((link)=>(
+                    <a key={link.name} href={link.href} className='hover:text-zinc-600'>
+                      {link.name}
+                    </a>
+                ))}
+            </div>
+
+             <a href="#booking-process" className='hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition'>
+                Book a table
+            </a>
 
          </div>
       </nav>

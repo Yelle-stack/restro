@@ -8,6 +8,16 @@ const HeroSection = () => {
         <p className='text-orange-600'>WHERE FLAVOR MEETS ELEGANCE</p>
     </Animated>
 
+    <Animated>
+        <h1 className="text-5xl md:text-6xl font-medium max-w-3xl text-center mt-5 font-urbanist text-balance">
+            Crafted for unforgettable dining moments
+        </h1>
+    </Animated>
+
+    <Animated delay={0.2}>
+        <p className='text-orange-600'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space for every celebration.</p>
+    </Animated>
+
    </section>
 
   )

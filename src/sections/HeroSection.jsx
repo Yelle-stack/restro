@@ -2,7 +2,7 @@ import Animated from "../components/Animated"
 
 const HeroSection = () => {
   return (
-   <section className="flex flex-col items-center min-h-screen justify-start bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat px-4 pt-20">
+   <section className="flex flex-col items-center min-h-screen justify-center bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat px-4 pt-20">
 
     <Animated y={-20} delay={0.2}>
         <p className='text-orange-600'>WHERE FLAVOR MEETS ELEGANCE</p>
@@ -15,7 +15,13 @@ const HeroSection = () => {
     </Animated>
 
     <Animated delay={0.2}>
-        <p className='text-orange-600'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space for every celebration.</p>
+        <p className='text-zinc-600 max-w-md text-center mt-3'>Experience carefully curated menus, fresh local ingredients and impeccable service in a space for every celebration.</p>
+    </Animated>
+
+    <Animated>
+        <a href="#booking-process" className="bg-orange-500 hover:bg-olive-600 text-white font-medium px-6 py-3 mt-8 rounded-full block transition">
+            Book a table
+        </a>
     </Animated>
 
    </section>

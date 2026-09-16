@@ -1,5 +1,12 @@
 import Animated from "../components/Animated"
 
+const avatars = [
+    "/assets/user-1.jpeg",
+    "/assets/user-2.jpeg",
+    "/assets/user-3.jpeg",
+    "/assets/user-4.jpeg",
+]
+
 const HeroSection = () => {
   return (
    <section className="flex flex-col items-center min-h-screen justify-center bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat px-4 pt-20">
@@ -22,6 +29,17 @@ const HeroSection = () => {
         <a href="#booking-process" className="bg-orange-500 hover:bg-olive-600 text-white font-medium px-6 py-3 mt-8 rounded-full block transition">
             Book a table
         </a>
+    </Animated>
+
+    <Animated className="flex items-center justify-center md:justify-start mt-9">
+       <div className="flex -space-x-3.5">
+          {avatars.map((src, i)=>(
+            <img key={i} src={src} alt="guest" className="size-10 border-2 border-slate-50 rounded-full hover:-translate-y-px transition"/>
+          ))}
+       </div>
+       <div>
+
+       </div>
     </Animated>
 
    </section>

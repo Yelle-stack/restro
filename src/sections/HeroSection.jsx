@@ -1,3 +1,4 @@
+import { Star } from "lucide-react"
 import Animated from "../components/Animated"
 
 const avatars = [
@@ -38,7 +39,12 @@ const HeroSection = () => {
           ))}
        </div>
        <div>
-
+         <div className="flex items-center gap-0.5">
+            {[...Array(5)].map((_, i)=>(
+              <Star key={i} className="size-3.5 fill-orange-500 text-orange-500"/>
+            ))}
+         </div>
+         <p className="text-zinc-800">4.8/5 Rating - 10,000 reviews</p>
        </div>
     </Animated>
 

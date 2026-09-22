@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import Animated from '../components/Animated'
 import { dishes } from '../data/data'
 import { motion } from 'motion/react'
 
 const Dishes = () => {
+
+  const [rotate, setRotate] = useState({})
+
   return (
     <section id="dishes" className="px-auto mt-44">
 
@@ -24,43 +28,49 @@ const Dishes = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-18 max-w-5xl mx-auto">
 
-        {dishes.map((dish, index) => (
+       {dishes.map((dish, index) => (
 
-          <Animated
-            key={dish.id}
-            y={80}
-            delay={index * 0.1}
-            className="flex flex-col items-center text-center shrink-0 cursor-pointer"
-          >
+  <Animated
+    key={dish.id}
+    y={80}
+    delay={index * 0.1}
+    className="flex flex-col items-center text-center shrink-0 cursor-pointer"
+  >
 
-            <motion.div
-              animate={{ rotate: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 80,
-                damping: 15
-              }}
-            >
+    <motion.div
+      animate={{ rotate: rotate[index] || 0 }}
+      onMouseEnter={() =>
+        setRotate((prev) => ({
+          ...prev,
+          [index]: (prev[index] || 0) + 180
+        }))
+      }
+      transition={{
+        type: "spring",
+        stiffness: 80,
+        damping: 15
+      }}
+    >
 
-              <img
-                src={dish.img}
-                alt={dish.title}
-                className="size-30 md:size-35 object-cover"
-              />
+      <img
+        src={dish.img}
+        alt={dish.title}
+        className="size-30 md:size-35 object-cover"
+      />
 
-            </motion.div>
+    </motion.div>
 
-            <h3 className="mt-4 font-medium">
-              {dish.title}
-            </h3>
+    <h3 className="mt-5">
+      {dish.title}
+    </h3>
 
-            <p className="text-orange-500 mt-1">
-              {dish.price}
-            </p>
+    <p className="text-zinc-600 mt-2">
+      {dish.price}
+    </p>
 
-          </Animated>
+  </Animated>
 
-        ))}
+))}
 
       </div>
 

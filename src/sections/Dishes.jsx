@@ -1,30 +1,69 @@
-import React from 'react'
 import Animated from '../components/Animated'
 import { dishes } from '../data/data'
+import { motion } from 'motion/react'
 
 const Dishes = () => {
   return (
-    <section id='dishes' className='px-auto mt-44'>
-      <div className='text-center mb-16'>
-       <Animated delay={0.2}>
-          <p className='text-orange-500 font-medium uppercase mb-3.5'>
+    <section id="dishes" className="px-auto mt-44">
+
+      <div className="text-center mb-16">
+
+        <Animated delay={0.2}>
+          <p className="text-orange-500 font-medium uppercase mb-3.5">
             Chef's Signature Selection
           </p>
-       </Animated>
-       <Animated>
-          <h2 className='text-4xl md:text-5xl max-w-lg mx-auto text-balance'>
+        </Animated>
+
+        <Animated>
+          <h2 className="text-4xl md:text-5xl max-w-lg mx-auto text-balance">
             Discover our signature dishes
           </h2>
-       </Animated>
+        </Animated>
+
       </div>
 
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-18 max-w-5xl mx-auto'>
-        {dishes.map((dish, index)=>(
-          <Animated>
-            
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-18 max-w-5xl mx-auto">
+
+        {dishes.map((dish, index) => (
+
+          <Animated
+            key={dish.id}
+            y={80}
+            delay={index * 0.1}
+            className="flex flex-col items-center text-center shrink-0 cursor-pointer"
+          >
+
+            <motion.div
+              animate={{ rotate: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 80,
+                damping: 15
+              }}
+            >
+
+              <img
+                src={dish.img}
+                alt={dish.title}
+                className="size-30 md:size-35 object-cover"
+              />
+
+            </motion.div>
+
+            <h3 className="mt-4 font-medium">
+              {dish.title}
+            </h3>
+
+            <p className="text-orange-500 mt-1">
+              {dish.price}
+            </p>
+
           </Animated>
+
         ))}
+
       </div>
+
     </section>
   )
 }

@@ -35,8 +35,12 @@ const Features = () => {
                     <Animated key={index} y={150} delay={index * 0.15}
                     className="flex items-start gap-4 text-left">
                       {IconComponent && (
-                        <IconComponent className="text-orange-500 size"/>
+                        <IconComponent className="text-orange-500 size-5 shrink-0 mt-0.5"/>
                       )}
+                      <div>
+                        <h3 className='text-xl mb-2'>{item.title}</h3>
+                        <p className='text-zinc-600 max-w-sm'>{item.description}</p>
+                      </div>
                     </Animated>
                  )
                })}

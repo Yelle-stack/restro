@@ -134,8 +134,7 @@ This project was created to practice and demonstrate:
 ![image alt](https://github.com/Yelle-stack/restro/blob/496923b6d5807a1195314a38b187e75e9af5ef3d/Capture%20d%E2%80%99e%CC%81cran%202026-09-22%20a%CC%80%2015.01.08.png)
 ### Responsive Design
 
-<!-- Add a mobile screenshot here -->
-
+![image alt](https://github.com/Yelle-stack/restro/blob/044c71d4be9badf1d45a54fed8d25721cfb06d6e/restroMobile.png)
 
 ## 👩‍💻 Author
 

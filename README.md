@@ -1,16 +1,151 @@
-# React + Vite
+# 🍽️ Restro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive restaurant website built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+Restro is a restaurant landing page designed with a clean, elegant interface and smooth animations to create an engaging browsing experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 📱 Fully responsive design
+* 🎨 Modern and elegant restaurant UI
+* ⚛️ Built with React
+* ⚡ Fast development and optimized build with Vite
+* 🎞️ Smooth scroll and animations
+* 🍴 Dynamic dishes section
+* 📅 Booking process section
+* ⭐ Testimonials section
+* ❓ FAQ section
+* 📍 Restaurant information and opening hours
+* 🧭 Responsive navigation bar
+* 🔗 Call-to-action sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+* **React**
+* **JavaScript (ES6+)**
+* **Vite**
+* **Tailwind CSS**
+* **Lucide React**
+* **Motion**
+* **Lenis** — smooth scrolling
+* **Oxlint** — code linting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📂 Project Structure
+
+```text
+src/
+├── assets/
+│   └── images and other assets
+│
+├── components/
+│   ├── Animated.jsx
+│   ├── Footer.jsx
+│   ├── LenisScroll.jsx
+│   └── Navbar.jsx
+│
+├── data/
+│   └── data.js
+│
+├── sections/
+│   ├── About.jsx
+│   ├── BookingProcess.jsx
+│   ├── CTA.jsx
+│   ├── Dishes.jsx
+│   ├── FAQs.jsx
+│   ├── Features.jsx
+│   ├── HeroSection.jsx
+│   ├── Stats.jsx
+│   ├── TestimonialsSection.jsx
+│   └── Timing.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed on your machine.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Yelle-stack/restro.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd restro
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## 🏗️ Build for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🎯 Project Goals
+
+This project was created to practice and demonstrate:
+
+* Component-based architecture with React
+* Responsive UI development
+* Modern CSS styling with Tailwind CSS
+* Reusable React components
+* Smooth scrolling and UI animations
+* Clean project organization
+* Building a complete restaurant website from scratch
+
+## 📸 Preview
+
+### Hero Section
+
+<!-- Add a screenshot of your website here -->
+
+### Responsive Design
+
+<!-- Add a mobile screenshot here -->
+
+
+## 👩‍💻 Author
+
+**Jelena Zeko**
+
+Full-Stack Developer • MERN • JavaScript • TypeScript • Tailwind CSS
+
+* GitHub: [Yelle-stack](https://github.com/Yelle-stack)
+
+---
+
+⭐ If you like this project, feel free to give it a star!

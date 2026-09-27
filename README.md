@@ -131,8 +131,7 @@ This project was created to practice and demonstrate:
 
 ### Hero Section
 
-<!-- Add a screenshot of your website here -->
-
+![image alt](https://github.com/Yelle-stack/restro/blob/496923b6d5807a1195314a38b187e75e9af5ef3d/Capture%20d%E2%80%99e%CC%81cran%202026-09-22%20a%CC%80%2015.01.08.png)
 ### Responsive Design
 
 <!-- Add a mobile screenshot here -->
